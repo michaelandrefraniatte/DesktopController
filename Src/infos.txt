@@ -1,0 +1,24 @@
+For server-client connection :
+- In Windows firewall, the client needs an outbound rule allowing distant internal IP of server in TCP (10.0.0.13),
+- In Windows firewall, the server needs an inbound rule allowing distant internal IP of client in TCP (10.0.0.11).
+
+For Shared Folder : 
+- It corresponds to a folder on PC receiver hard disk
+- Functionnalities activating default ones from programs and functionnalities under control panel
+- Network properties to enable features of IPv4 and NetBios TCP
+- Network must be private
+- Share center to allow network sharing disabling authentication for all network
+- Network connection set to private
+- Service Server and NetBios TCP running
+- Create the folder C:/test to share in read/write allowing
+- File to transfer must not be higher than 100 Ko
+- Lower screen resolution to not have a too bigger file to transfer
+
+For programing :
+- Each PC open a server with a socket in infinite loop worker closed by the PC controlling with this socket as a client, only one client socket, and one server socket for each PC, data are characteristics of open/close socket and websocket, mouse and keyboard hooks and events, and folder shared path.
+- This control socket above controls also websocket under.
+- Each PC have one client websocket and one server websocket for receiving sound from one PC and for sending sound to every PC.
+- The PC controlling can control one by one each PC with buttons for receive sound, for send sound, for send mouse and keyboard, and for receive the screen of the PC controlled.
+- The controls are going through socket as a string script for having array, like booleans, int, double, float, well parsed
+- Using list to array of computers in networks knowing which ones are receiving audio, conversion tolist, toarray, finally to list
+

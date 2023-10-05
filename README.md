@@ -1,3 +1,1 @@
-﻿https://michaelandrefraniatte.github.io/DesktopController  
-  
-https://github.com/michaelandrefraniatte  
+﻿https://github.com/michaelandrefraniatte
